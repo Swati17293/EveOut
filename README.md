@@ -16,10 +16,29 @@ pip install -r requirements.txt
 
 ## Dataset Generation 
 
-> Download glove.6B.300d.txt file and place it in the data/external/glove folder.
+> parser = argparse.ArgumentParser()
+    parser.add_argument("api_key", type=str, help="<Required> set Event Registry api key")
+    parser.add_argument("--category", help="<Optional> set one or more category", nargs='*', default=['news/Business', 'news/Politics', 'news/Technology','news/Environment', 'news/Health', 'news/Science','news/Sports', 'news/Arts_and_Entertainment'])
+    parser.add_argument("--source", help="<Optional> set one or more source", nargs='*', default=['nytimes.com', 'indiatimes.com', 'washingtonpost.com', 'usatoday.com', 'chinadaily.com.cn'])
+    parser.add_argument("--date_start", help="<Optional> set event start date", default='2019-01-01')
+    parser.add_argument("--date_end", help="<Optional> set event end date", default='2019-01-01')
+    parser.add_argument("--lang", help="<Optional> set language", default='eng')
 
+> To replicated the reported dataset run:
 ```
-python3 main.py
+python3 main.py eventRegistry_apiKey
+```
+
+> To generate custom dataset, pass the values as the commandline arguments:
+* --category (<Optional> set one or more category, default=['news/Business', 'news/Politics', 'news/Technology','news/Environment', 'news/Health', 'news/Science','news/Sports', 'news/Arts_and_Entertainment'])
+* --source (<Optional> set one or more news source, default=['nytimes.com', 'indiatimes.com', 'washingtonpost.com', 'usatoday.com', 'chinadaily.com.cn'])
+* --date_start (<Optional> set event start date, default='2019-01-01')
+* --date_end (<Optional> set event end date, default='2020-05-31')
+* --lang (<Optional> set language, default='eng')
+
+> For example, to retrieve events in the 'Business' category in the 'Slovene' language reported by 'Delo' run:
+```
+python3 main.py eventRegistry_apiKey --lang slv --category news/Business --source delo.si
 ```
     
 ## License

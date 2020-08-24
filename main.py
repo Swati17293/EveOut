@@ -16,7 +16,7 @@ def main():
     parser.add_argument("--category", help="<Optional> set one or more category", nargs='*', default=['news/Business', 'news/Politics', 'news/Technology','news/Environment', 'news/Health', 'news/Science','news/Sports', 'news/Arts_and_Entertainment'])
     parser.add_argument("--source", help="<Optional> set one or more source", nargs='*', default=['nytimes.com', 'indiatimes.com', 'washingtonpost.com', 'usatoday.com', 'chinadaily.com.cn'])
     parser.add_argument("--date_start", help="<Optional> set event start date", default='2019-01-01')
-    parser.add_argument("--date_end", help="<Optional> set event end date", default='2019-01-01')
+    parser.add_argument("--date_end", help="<Optional> set event end date", default='2020-05-31')
     parser.add_argument("--lang", help="<Optional> set language", default='eng')
     
     args = parser.parse_args()
