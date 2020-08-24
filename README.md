@@ -64,7 +64,7 @@ python3 main.py eventRegistry_apiKey --lang slv --category news/Business --sourc
 ---------------------------------------------------------------------------------------------------------------------
 #	field-label		    description									
 ---------------------------------------------------------------------------------------------------------------------
-1.	uri	a unique event identifer
+1.	uri		a unique event identifer
 2.	title	title of the event eng
 3.	event_date	date of the event in yyyy-mm-dd format
 4.	sentiment	event sentiment
@@ -73,8 +73,8 @@ python3 main.py eventRegistry_apiKey --lang slv --category news/Business --sourc
 7.	loc_continent	continent where the event occurred
 8.	article_count	total number of articles published related to the event in eng
 9.	total_article_count	total number of articles published related to the event
-10.	summary	summary of the event
-11.	news_outlet	column per outlet with binary values to indicate whether or not the outlet covered the event.
+10.	summary		summary of the event
+11.	news_outlet		column per outlet with binary values to indicate whether or not the outlet covered the event.
 ---------------------------------------------------------------------------------------------------------------------
 ```
 
