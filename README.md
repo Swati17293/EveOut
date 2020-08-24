@@ -74,8 +74,8 @@ python3 main.py eventRegistry_apiKey --lang slv --category news/Business --sourc
 8.	article_count		total number of articles published related to the event in eng
 9.	total_article_count	total number of articles published related to the event
 10.	summary			summary of the event
-11.	news_outlet		column per outlet with binary values to indicate whether or not the outlet covered 
-					the event
+11.	news_outlet		column per outlet with binary values to indicate whether or not the outlet  
+				covered the event
 -----------------------------------------------------------------------------------------------------------
 ```
 
