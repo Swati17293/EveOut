@@ -1,9 +1,0 @@
-name: EveOut
-channels:
-  - defaults
-dependencies:
-  - anaconda
-  - pip
-  - pip:
-    - eventregistry
-    - yattag
