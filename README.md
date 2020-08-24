@@ -62,7 +62,7 @@ python3 main.py eventRegistry_apiKey --lang slv --category news/Business --sourc
 ```
 ```
 ---------------------------------------------------------------------------------------------------------------------
-#	field-label		    description									
+#	field-label		description									
 ---------------------------------------------------------------------------------------------------------------------
 1.	uri			a unique event identifer
 2.	title			title of the event eng
