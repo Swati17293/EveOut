@@ -34,10 +34,3 @@ def generate_uri_list(api_key, category_uri_lst, source_uri_lst, date_start, dat
 
     with open("data/intermediate/uri_dict.txt", "wb") as myFile:
         pickle.dump(uri_dict, myFile)
-
-
-
-
-
-
-    
