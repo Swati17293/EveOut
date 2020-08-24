@@ -105,11 +105,3 @@ def create_datafiles(apiKey, lang, source_lst):
                     row_text.append('0')
 
             writer.writerow(row_text)
-
-
-
-
-
-
-
-    
