@@ -8,21 +8,13 @@
 
 ## Python Dependencies
 
-To run the tool, Python 2.7+ must be downloaded.
+> To run the tool, Python 2.7+ must be downloaded.
 The easiest way to download all necessary Python packages is using pip. To do so, navigate to the project root directory and run:
 ```
 pip install -r requirements.txt
 ```
 
-## Dataset Generation 
-
-> parser = argparse.ArgumentParser()
-    parser.add_argument("api_key", type=str, help="<Required> set Event Registry api key")
-    parser.add_argument("--category", help="<Optional> set one or more category", nargs='*', default=['news/Business', 'news/Politics', 'news/Technology','news/Environment', 'news/Health', 'news/Science','news/Sports', 'news/Arts_and_Entertainment'])
-    parser.add_argument("--source", help="<Optional> set one or more source", nargs='*', default=['nytimes.com', 'indiatimes.com', 'washingtonpost.com', 'usatoday.com', 'chinadaily.com.cn'])
-    parser.add_argument("--date_start", help="<Optional> set event start date", default='2019-01-01')
-    parser.add_argument("--date_end", help="<Optional> set event end date", default='2019-01-01')
-    parser.add_argument("--lang", help="<Optional> set language", default='eng')
+## Dataset Generation
 
 > To replicated the reported dataset run:
 ```
@@ -30,11 +22,12 @@ python3 main.py eventRegistry_apiKey
 ```
 
 > To generate custom dataset, pass the values as the commandline arguments:
-* --category (<Optional> set one or more category, default=['news/Business', 'news/Politics', 'news/Technology','news/Environment', 'news/Health', 'news/Science','news/Sports', 'news/Arts_and_Entertainment'])
-* --source (<Optional> set one or more news source, default=['nytimes.com', 'indiatimes.com', 'washingtonpost.com', 'usatoday.com', 'chinadaily.com.cn'])
-* --date_start (<Optional> set event start date, default='2019-01-01')
-* --date_end (<Optional> set event end date, default='2020-05-31')
-* --lang (<Optional> set language, default='eng')
+
+--category (<Optional> set one or more category, default=['news/Business', 'news/Politics', 'news/Technology','news/Environment', 'news/Health', 'news/Science','news/Sports', 'news/Arts_and_Entertainment'])
+--source (<Optional> set one or more news source, default=['nytimes.com', 'indiatimes.com', 'washingtonpost.com', 'usatoday.com', 'chinadaily.com.cn'])
+--date_start (<Optional> set event start date, default='2019-01-01')
+--date_end (<Optional> set event end date, default='2020-05-31')
+--lang (<Optional> set language, default='eng')
 
 > For example, to retrieve events in the 'Business' category in the 'Slovene' language reported by 'Delo' run:
 ```
