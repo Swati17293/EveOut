@@ -38,7 +38,9 @@ python3 main.py eventRegistry_apiKey
 ```
 python3 main.py eventRegistry_apiKey --lang slv --category news/Business --source delo.si
 ```
-    
+## Dataset Generation
+> Sample dataset is available in data_smaple/
+
 ## License
 > MIT License
 
