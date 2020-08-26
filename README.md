@@ -39,7 +39,7 @@ For example, to retrieve events in the 'Business' category in the 'Slovene' lang
 python3 main.py eventRegistry_apiKey --lang slv --category news/Business --source delo.si
 ```
 ## Sample Dataset 
-> Sample dataset is available in the directory data_smaple/raw/
+Sample dataset is available in the directory data_smaple/raw/
 
 ## License
 MIT License
