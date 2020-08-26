@@ -2,13 +2,13 @@
 
 ## Introduction
 
-> We present a dataset of 77,545 news events collected between January 2019 and May 2020. We selected the top five news outlets based on Alexa Global Rankings and retrieved all the events reported in English by these outlets using the Event Registry API. Our dataset can be used as a resource to analyze and learn the relationship between events and their selection by the chosen outlets. It is primarily intended to be used by researchers studying bias in event selection. However, it may also be used to study the geographical, temporal, categorical and several other aspects of the events. We demonstrate the value of the resource in developing novel applications in the digital humanities with motivating use cases such as the Outlet Prediction task given the event details and analysis of event-selection bias.
+We present a dataset of 77,545 news events collected between January 2019 and May 2020. We selected the top five news outlets based on Alexa Global Rankings and retrieved all the events reported in English by these outlets using the Event Registry API. Our dataset can be used as a resource to analyze and learn the relationship between events and their selection by the chosen outlets. It is primarily intended to be used by researchers studying bias in event selection. However, it may also be used to study the geographical, temporal, categorical and several other aspects of the events. We demonstrate the value of the resource in developing novel applications in the digital humanities with motivating use cases such as the Outlet Prediction task given the event details and analysis of event-selection bias.
 
 ### Due to the size of the dataset, it is hosted on Zenodo and is available at: https://zenodo.org/record/3953878
 
 ## Python Dependencies
 
-> To run the tool, Python 2.7+ must be downloaded.
+To run the tool, Python 2.7+ must be downloaded.
 The easiest way to download all necessary Python packages is using pip. To do so, navigate to the project root directory and run:
 ```
 pip install -r requirements.txt
@@ -16,12 +16,12 @@ pip install -r requirements.txt
 
 ## Dataset Generation
 
-> To replicated the reported dataset run:
+To replicated the reported dataset run:
 ```
 python3 main.py eventRegistry_apiKey
 ```
 
-> To generate custom dataset, pass the values as the commandline arguments:
+To generate custom dataset, pass the values as the commandline arguments:
 ```
 --category (<Optional> set one or more category, default=['news/Business', 'news/Politics', 'news/Technology','news/Environment', 'news/Health', 'news/Science','news/Sports', 'news/Arts_and_Entertainment'])
 
@@ -34,7 +34,7 @@ python3 main.py eventRegistry_apiKey
 --lang (<Optional> set language, default='eng')
 ```
 
-> For example, to retrieve events in the 'Business' category in the 'Slovene' language reported by 'Delo' run:
+For example, to retrieve events in the 'Business' category in the 'Slovene' language reported by 'Delo' run:
 ```
 python3 main.py eventRegistry_apiKey --lang slv --category news/Business --source delo.si
 ```
@@ -42,10 +42,10 @@ python3 main.py eventRegistry_apiKey --lang slv --category news/Business --sourc
 > Sample dataset is available in the directory data_smaple/raw/
 
 ## License
-> MIT License
+MIT License
 
 ## Citation
-> If this data set is used in publication, please cite:
+If this data set is used in a publication, please cite:
 ```
 @dataset{swati_2020_3953878,
   author       = {Swati and
